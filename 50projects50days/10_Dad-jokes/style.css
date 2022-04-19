@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(120, 109, 245);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    min-width: 300px;
+    width: 800px;
+    min-height: 400px;
+    padding: 40px;
+    margin: 20px;
+    background-color: rgb(243, 245, 248);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(113, 80, 145);
+}
+
+.challenge {
+    color: grey;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.joke {
+    font-size: 36px;
+    text-align: center;
+}
+
+.button-div {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-joke {
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(167, 100, 230);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+.new-joke:active {
+    padding: 12px 27px;
+}
