@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.image {
+    border-radius: 60px;
+    margin: 10px;
+    overflow: hidden;
+    flex: 1 1;
+    transition: all 1s ease-in-out;
+}
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    transition: all 1s ease-in-out;
+    /* how to put 2 transitions after each other?? */
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.open {
+    flex: 8 1;
+}
+
+.open img {
+    transform: scale(1.1)
+}
