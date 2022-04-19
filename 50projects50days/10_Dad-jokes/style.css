@@ -57,8 +57,9 @@ body {
     border: none;
     box-shadow: 2px 2px 5px rgb(146, 146, 146);
     cursor: pointer;
+    transition: all 150ms ease-in-out;
 }
 
 .new-joke:active {
-    padding: 12px 27px;
+    transform: scale(0.9);
 }

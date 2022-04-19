@@ -15,10 +15,8 @@ const jokeList = [
 ]
 
 const getJoke = () => {
-    let num = Math.floor(Math.random() * jokeList.length);
-    console.log(num);
-    const newNode = document.createTextNode(jokeList[num]);
-    joke.replaceChild(newNode, joke.childNodes[0]);
+    const num = Math.floor(Math.random() * jokeList.length);
+    joke.textContent = jokeList[num];
 }
 
 getJoke();
