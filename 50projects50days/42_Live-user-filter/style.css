@@ -1,0 +1,106 @@
+/* What is the good practice for ordering 1) selectors 2) descriptors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 300px;
+    max-height: 550px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #aba9a9;
+}
+
+.search {
+    height: 30%;
+    background-color: #4f43d2;
+    border-radius: 10px 10px 0px 0px;
+    /* is there a more elegant solution? */
+    padding: 20px;
+}
+
+.userlistdiv {
+    height: 400px;
+    /* why didn't overflow: scroll work with 70% height */
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    /* is there a more elegant solution? */
+    overflow-y: scroll;
+    /* border-radius is lost */
+}
+
+.title {
+    color: white;
+    font-size: 18px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 14px;
+}
+
+.searchbar {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 20px;
+    color: #aba9a9;
+    font-size: 16px;
+    background-color: #352783;
+}
+
+.searchbar:focus {
+    outline: none;
+}
+
+.loading {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.userdiv {
+    padding: 15px;
+    height: 110px;
+}
+
+.userdiv + .userdiv {
+    border-top: 0.5px solid #dadada;
+}
+
+.imagediv {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-right: 20px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight:700;
+    margin: 5px 0px;
+}
+
+.place {
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
