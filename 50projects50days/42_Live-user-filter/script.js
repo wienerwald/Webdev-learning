@@ -1,7 +1,6 @@
 const userListDiv = document.querySelector(".userlistdiv");
 const searchbar = document.querySelector(".searchbar");
 
-// array of objects?
 const userList = [
     {
         name: "Buttons",
@@ -36,9 +35,8 @@ const userList = [
 ];
 
 const loadUsers = (item) => {
-    // can I pre-write an HTML code block and append it at once?
-    console.log(item);
-
+    // can I pre-write an HTML code block and append it at once? - No, it is safer like this.
+    
     const userDiv = document.createElement("div");
     userDiv.classList.add("userdiv");
 
@@ -65,16 +63,15 @@ const loadUsers = (item) => {
 
 userList.forEach(loadUsers);
 
-//.includes() did not work! Why? I used this instead
-const stringIncludes = (a, b) => {
-    return a.indexOf(b) >= 0;
-}
+// const stringIncludes = (a, b) => {
+//     return a.indexOf(b) >= 0;
+// }
 
 const liveSearch = () => {
     const search_query = searchbar.value;
     const userDivs = document.querySelectorAll(".userdiv");
     userDivs.forEach((item) => {
-        if (stringIncludes(item.innerText.toLowerCase(), search_query.toLowerCase())) {
+        if (item.innerText.toLowerCase().includes(search_query.toLowerCase())) {
             item.classList.remove("hidden")
         }
         else {

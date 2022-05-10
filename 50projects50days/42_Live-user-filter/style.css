@@ -17,24 +17,25 @@ body {
 
 .container {
     width: 300px;
-    max-height: 550px;
+    height: 550px;
     border-radius: 10px;
+    overflow: hidden;
     box-shadow: 5px 5px 10px #aba9a9;
 }
 
 .search {
     height: 30%;
     background-color: #4f43d2;
-    border-radius: 10px 10px 0px 0px;
+    /* border-radius: 10px 10px 0px 0px; */
     /* is there a more elegant solution? */
     padding: 20px;
 }
 
 .userlistdiv {
-    height: 400px;
+    height: 70%;
     /* why didn't overflow: scroll work with 70% height */
     background-color: white;
-    border-radius: 0px 0px 10px 10px;
+    /* border-radius: 0px 0px 10px 10px; */
     /* is there a more elegant solution? */
     overflow-y: scroll;
     /* border-radius is lost */
